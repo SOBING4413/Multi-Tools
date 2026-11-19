@@ -1,0 +1,44 @@
+#include <windows.h>
+#include "resource.h"
+#include "core/version.h"
+
+#define VER_FILEVERSION      MT_VER_NUM
+#define VER_FILEVERSION_STR  MT_VER_FILE_A
+
+IDI_APP ICON "app.ico"
+/* Application manifest (visual styles, per-monitor DPI, long paths).
+   MinGW/windres embeds it from here.  MSVC / CMake-MSVC embed res/multitool.manifest through their manifest tool
+   (a <Manifest> item / target source), so it must NOT be repeated here: that would cause
+   "CVT1100: duplicate resource. type:MANIFEST, name:1". */
+#ifdef __GNUC__
+1 RT_MANIFEST "multitool.manifest"
+#endif
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    VER_FILEVERSION
+ PRODUCTVERSION VER_FILEVERSION
+ FILEFLAGSMASK  0x3fL
+ FILEFLAGS      0x0L
+ FILEOS         VOS_NT_WINDOWS32
+ FILETYPE       VFT_APP
+ FILESUBTYPE    0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Exter Interactive\0"
+            VALUE "FileDescription",  "MultiTool - all-in-one Windows toolkit\0"
+            VALUE "FileVersion",      VER_FILEVERSION_STR "\0"
+            VALUE "InternalName",     "multi-tool\0"
+            VALUE "LegalCopyright",   "Copyright (C) 2026 Exter Interactive. GPL-3.0.\0"
+            VALUE "OriginalFilename", "multi-tool.exe\0"
+            VALUE "ProductName",      "MultiTool\0"
+            VALUE "ProductVersion",   VER_FILEVERSION_STR "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

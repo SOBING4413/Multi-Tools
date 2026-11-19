@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Directory.Build.props - imported automatically by MSBuild for every project below this folder.
+  Keeps output locations and shared settings in one place:
+      bin\<Platform>\<Configuration>\multi-tool.exe      final executable
+      obj\<Platform>\<Configuration>\...                  intermediate files (mirrors the src\ tree)
+-->
+<Project>
+  <PropertyGroup>
+    <MultiToolVersion>3.0.0</MultiToolVersion>
+    <OutDir>$(MSBuildThisFileDirectory)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(MSBuildThisFileDirectory)obj\$(Platform)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)multitool.ruleset</CodeAnalysisRuleSet>
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+  </PropertyGroup>
+</Project>

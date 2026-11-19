@@ -1,0 +1,17 @@
+# clang-format style used by the code base (C11, 4 spaces, Allman-ish function braces)
+BasedOnStyle: LLVM
+Language: Cpp
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 140
+BreakBeforeBraces: Linux
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+PointerAlignment: Left
+SortIncludes: Never
+SpaceAfterCStyleCast: false
+IndentCaseLabels: false

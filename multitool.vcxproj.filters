@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res"><UniqueIdentifier>{9B207167-E538-1C47-682C-6B4F58A623FB}</UniqueIdentifier></Filter>
+    <Filter Include="tools"><UniqueIdentifier>{4A931512-CE65-BDC9-CA68-08ADF92D8783}</UniqueIdentifier></Filter>
+    <Filter Include="build"><UniqueIdentifier>{B0DA2755-2091-8E23-DD61-5E2A747528F1}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\app\main.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\app\shell.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\app\splash.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\core\out.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\core\settings.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\core\util.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\features\cleanup.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\features\features.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\features\network.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\features\security.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\features\system.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\features\tools.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\gfx\gfx.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\i18n\i18n.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\i18n\i18n_data.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\modules\driver_scan.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\modules\hash.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\modules\malware_scan.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\modules\power_control.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\modules\procs.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\modules\sys.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\modules\sysmgr.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\livedata.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\logview.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pagemeta.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\table.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\uiutil.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\widgets.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\about.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\dashboard.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\drivers.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\features.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\malware.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\monitor.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\power.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\processes.c"><Filter></Filter></ClCompile>
+    <ClCompile Include="src\ui\pages\settings.c"><Filter></Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\app\shell.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\app\splash.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\core\common.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\core\out.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\core\settings.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\core\util.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\core\version.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\features\feat.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\gfx\gfx.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\i18n\i18n_keys.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\modules\driver_scan.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\modules\hash.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\modules\malware_scan.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\modules\power_control.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\modules\procs.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\modules\sys.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\modules\sysmgr.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\ui\internal.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\ui\livedata.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\ui\ui.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="src\ui\pages\pages.h"><Filter></Filter></ClInclude>
+    <ClInclude Include="res\resource.h"><Filter>res</Filter></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\multitool.rc"><Filter>res</Filter></ResourceCompile>
+    <Image Include="res\app.ico"><Filter>res</Filter></Image>
+    <Manifest Include="res\multitool.manifest"><Filter>res</Filter></Manifest>
+    <None Include="Directory.Build.props"><Filter>build</Filter></None>
+    <None Include="multitool.ruleset"><Filter>build</Filter></None>
+    <None Include="Makefile"><Filter>build</Filter></None>
+    <None Include="CMakeLists.txt"><Filter>build</Filter></None>
+    <None Include="tools\gen_i18n.py"><Filter>tools</Filter></None>
+    <None Include="tools\gen_vsproj.py"><Filter>tools</Filter></None>
+    <None Include="tools\make_ico.py"><Filter>tools</Filter></None>
+  </ItemGroup>
+</Project>

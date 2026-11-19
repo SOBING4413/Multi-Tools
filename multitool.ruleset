@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Code-analysis rule set used by Visual Studio (/analyze). Rules that are noisy for a Win32 C code base are downgraded. -->
+<RuleSet Name="MultiTool rules" Description="Code analysis rules for MultiTool (C / Win32)" ToolsVersion="17.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />   <!-- using uninitialized memory -->
+    <Rule Id="C6011" Action="Warning" />   <!-- dereferencing NULL pointer -->
+    <Rule Id="C6031" Action="Warning" />   <!-- return value ignored -->
+    <Rule Id="C6053" Action="Warning" />   <!-- call may not zero-terminate string -->
+    <Rule Id="C6054" Action="Warning" />   <!-- string may not be zero-terminated -->
+    <Rule Id="C6386" Action="Warning" />   <!-- buffer overrun -->
+    <Rule Id="C6387" Action="Warning" />   <!-- parameter could be NULL -->
+    <Rule Id="C28159" Action="None" />     <!-- consider GetTickCount64 (already used where it matters) -->
+    <Rule Id="C28251" Action="None" />     <!-- inconsistent SAL annotation for WinMain -->
+    <Rule Id="C26451" Action="None" />     <!-- arithmetic overflow (false positives in drawing code) -->
+  </Rules>
+</RuleSet>
